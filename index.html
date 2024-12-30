@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Texta - Online Forum</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to Texta</h1>
+    <div id="user-container">
+      <input type="text" id="username" placeholder="Enter Username">
+      <button onclick="login()">Login</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="search-section">
+      <input type="text" id="search-bar" placeholder="Search Communities">
+      <button onclick="searchCommunities()">Search</button>
+    </section>
+
+    <section id="community-list">
+      <h2>Join a Community</h2>
+      <ul id="community-list-items">
+        <!-- Community items will be dynamically listed here -->
+      </ul>
+    </section>
+
+    <!-- Button to create a new community -->
+    <section id="create-community">
+      <button onclick="window.location.href='community.html'">Create a New Community</button>
+    </section>
+  </main>
+
+  <footer>
+    <a href="rules.html">Community Rules</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
